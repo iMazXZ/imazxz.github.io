@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 *
 {
     outline: none !important;
@@ -338,13 +338,10 @@ footer
         padding-left: .1.5rem;
     }
 }
-@media (min-width: 992px)
+.navbar-light .navbar-toggler 
 {
-    .navbar-light .navbar-toggler 
-    {
-        background: #fff;
-        border-radius: 0;
-    }
+    background: #fff;
+    border-radius: 0;
 }
 .banner
 {
