@@ -75,6 +75,11 @@
     margin-bottom:25px;
 }
 
+.card {
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
 /*---DARK MODE TOGGLE---*/
 
 [data-theme="dark"] {
@@ -140,4 +145,20 @@
 
 [data-theme="dark"] .card-body {
     background-color: #303030 !important;
+}
+
+[data-theme="dark"] .card {
+    border: 0px solid rgba(0,0,0,.125);
+}
+
+[data-theme="dark"] .form-control {
+    background-color: #222;
+    border: 1px solid #c061ff;
+
+}
+
+[data-theme="dark"] .btn-outline-primary {
+    color: #fff;
+    border-color: #c061ff;
+
 }
