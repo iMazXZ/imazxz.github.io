@@ -1,101 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-*
-{
+* {
     outline: none !important;
     scroll-behavior: smooth;
 }
-body
-{
+
+body {
     font-family: 'Poppins', sans-serif;
 }
-header
-{
+
+header {
     position: relative;
     z-index: 1000000;
 }
-p
-{
+
+p {
     font-size: 1rem
 }
-.navbar
-{
+
+.navbar {
     background: transparent !important;
     transition: 0.5s;
 }
-.navbar.scrolled
-{
+
+.navbar.scrolled {
     background: #000 !important;
     transition: 0.5s;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
     color: #000;
-    background: #ffffff; 
+    background: #ffffff;
 }
-.navbar-light .navbar-nav .active>.nav-link:hover
-{
+
+.navbar-light .navbar-nav .active>.nav-link:hover {
     color: #000;
 }
-.navbar-light .navbar-nav .nav-link
-{
-    color: rgba(255,255,255,.8);
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .8);
 }
+
 .navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:focus
-{
-    color: rgba(255,255,255,.8);
+.navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, .8);
 }
+
 .navbar-light .navbar-brand,
 .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-brand:focus,
-.navbar-light .navbar-brand:visited
-{
-    color: rgba(255,255,255,1);
+.navbar-light .navbar-brand:visited {
+    color: rgba(255, 255, 255, 1);
     font-weight: 600;
 }
-.banner
-{
+
+.banner {
     position: relative;
     top: 0;
     width: 100%;
     height: 100vh;
-    background: url(img/bgcoding.jpg);
+    background: url(img/bgcoding.webp);
     background-size: cover;
     margin-bottom: 0;
 }
+
 .banner:before,
-.about:before
-{
+.about:before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 400px;
-    background: linear-gradient(#000,transparent);
+    background: linear-gradient(#000, transparent);
     pointer-events: none;
 }
+
 .banner:after,
-.about:after
-{
+.about:after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 400px;
-    background: linear-gradient(360deg,#000,transparent);
+    background: linear-gradient(360deg, #000, transparent);
     pointer-events: none;
 }
-.height100p
-{
+
+.height100p {
     height: 100vh;
 }
-.h100
-{
+
+.h100 {
     height: 100%;
 }
-.contentBox
-{
+
+.contentBox {
     position: relative;
     display: flex;
     justify-content: center;
@@ -103,68 +106,68 @@ p
     text-align: center;
     z-index: 10;
 }
-.contentBox h1
-{
+
+.contentBox h1 {
     font-weight: 800;
     color: #ffffff;
     text-shadow: #262626;
     text-transform: uppercase;
     font-size: 5rem;
 }
-.contentBox p
-{
+
+.contentBox p {
     color: #ffffff;
     text-shadow: #262626;
     font-size: 1.3rem;
 }
-:root{
-    --gradient-color: linear-gradient(to right bottom, rgba(255,119, 48, .8), rgba(255,185, 0, .8));
+
+:root {
+    --gradient-color: linear-gradient(to right bottom, rgba(255, 119, 48, .8), rgba(255, 185, 0, .8));
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.blog
-{
+.blog {
     position: relative;
     padding: 50px 0;
     background-color: #000000;
 }
 
-.kartu{
+.kartu {
     display: flex;
     flex-direction: column;
     background-color: #fff;
     margin-top: 20px;
-    box-shadow: 2px .8rem 1rem rgba(0,0,0,.05);
+    box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .05);
 }
 
-.image-data{
+.image-data {
     height: 25rem;
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
 
-.background-image{
+.background-image {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: url(img/bgnature.jpg) center no-repeat;
+    background: url(img/bgnature.webp) center no-repeat;
     background-size: cover;
     z-index: -1;
     transition: transform 5s;
 }
 
-.kartu:hover .background-image{
+.kartu:hover .background-image {
     transform: scale(1.5);
 }
 
-.publication-details{
+.publication-details {
     width: 100%;
     height: 100%;
     font-size: .8rem;
@@ -176,52 +179,53 @@ a{
     padding: 1rem;
 }
 
-.publication-details i{
+.publication-details i {
     margin-right: 1rem;
 }
 
-.user{
+.user {
     display: inline-block;
     margin-bottom: .5rem;
     transition: all .5s .3s;
 }
 
-.user:hover{
-    color: rgba(255,255,255,.75);
+.user:hover {
+    color: rgba(255, 255, 255, .75);
 }
 
-.tanggal{
+.tanggal {
     display: block
 }
 
-.post-data{
+.post-data {
     background-color: #fff;
     padding: 2rem 3rem;
     position: relative;
 }
 
-.title{
+.title {
     font-size: 2rem;
     line-height: 1;
 }
 
-.subtitle{
+.subtitle {
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
     color: #a2a2a2;
     margin: 1rem 0 1.5rem 0;
 }
-.description{
+
+.description {
     position: relative;
     font-size: 13px;
 }
 
-.description::first-letter{
+.description::first-letter {
     margin-left: .5rem;
 }
 
-.description::before{
+.description::before {
     content: '';
     position: absolute;
     top: 0;
@@ -229,16 +233,15 @@ a{
     width: 5px;
     height: 20px;
     background: var(--gradient-color);
-    
 }
 
-.cta{
+.cta {
     text-align: right;
     font-weight: bold;
     margin-top: 1rem;
 }
 
-.cta a{
+.cta a {
     background: var(--gradient-color);
     background-clip: text;
     -webkit-background-clip: text;
@@ -246,7 +249,7 @@ a{
     position: relative;
 }
 
-.cta a::before{
+.cta a::before {
     content: '';
     position: absolute;
     left: 0;
@@ -259,53 +262,45 @@ a{
     transition: transform .5s;
 }
 
-.cta a:hover::before{
+.cta a:hover::before {
     transform: scaleX(1);
 }
 
 @media screen and (min-width: 800px) {
-    .kartu{
+    .kartu {
         flex-direction: row;
         max-height: 75rem;
     }
-
-    .image-data{
+    .image-data {
         flex-basis: 40%;
         height: unset;
     }
-
-    .publication-details{
+    .publication-details {
         transform: translateX(-100%);
         transition: transform .5s;
     }
-
-    .kartu:hover .publication-details{
+    .kartu:hover .publication-details {
         transform: translateX(0);
     }
-    
-    .user{
+    .user {
         transform: translateY(-3rem);
         opacity: 0;
         transition-delay: .3s;
     }
-
-    .tanggal{
+    .tanggal {
         transform: translateY(3rem);
         opacity: 0;
         transition: all .5s .3s;
     }
-
     .kartu:hover .user,
-    .kartu:hover .tanggal{
+    .kartu:hover .tanggal {
         transform: translateY(0);
         opacity: 1;
     }
-
-    .post-data{
+    .post-data {
         flex-basis: 60%;
     }
-
-    .post-data::before{
+    .post-data::before {
         content: '';
         width: 3.5rem;
         height: 100%;
@@ -317,26 +312,26 @@ a{
         transform: skewX(-5deg);
     }
 }
-.button-blogpost
-{
+
+.button-blogpost {
     text-align: center;
 }
-.developer
-{
+
+.developer {
     padding: 100px 0;
     background: #000;
 }
-.headerText
-{
+
+.headerText {
     color: #ffffff;
 }
-.headerText h2
-{
+
+.headerText h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-.placeBox
-{
+
+.placeBox {
     position: relative;
     max-width: 300px;
     height: 400px;
@@ -344,19 +339,19 @@ a{
     background: #000;
     margin-top: 30px;
 }
-.placeBox .imgBx
-{
+
+.placeBox .imgBx {
     width: 100%;
     height: 100%;
 }
-.placeBox .imgBx img
-{
+
+.placeBox .imgBx img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.placeBox .content
-{
+
+.placeBox .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -366,39 +361,39 @@ a{
     justify-content: baseline;
     align-items: flex-end;
 }
-.placeBox .content h3
-{
+
+.placeBox .content h3 {
     position: relative;
     margin: 0;
     padding: 10px;
-    background: rgba(0,0,0,.95);
+    background: rgba(0, 0, 0, .95);
     color: #ffffff;
     font-size: 20px;
     font-weight: 600;
     width: 100%;
     text-align: center;
 }
-.placeBox .content h3 span
-{
+
+.placeBox .content h3 span {
     font-size: 16px;
     font-weight: 500;
 }
-.about
-{
+
+.about {
     position: relative;
-    background: url(img/bgcoding2.jpg);
+    background: url(img/bgcoding2.webp);
     background-size: cover;
     height: 100vh;
 }
-.about h2
-{
+
+.about h2 {
     font-weight: 800;
     color: #fff;
     text-transform: uppercase;
     font-size: 4.5rem;
 }
-.btnD1
-{
+
+.btnD1 {
     border: 2px solid #fff;
     color: #000;
     background: #fff;
@@ -409,72 +404,72 @@ a{
     font-weight: 500;
     margin-top: 20px;
 }
-footer
-{
+
+footer {
     background: #000000;
     padding: 50px 0 0;
 }
-.sci
-{
+
+.sci {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.sci li
-{
+
+.sci li {
     list-style: none;
     margin: 0 20px;
 }
-.sci li a
-{
+
+.sci li a {
     color: #ffffff;
     font-size: 2em;
     transition: 0.5s;
 }
-.sci li a:hover
-{
+
+.sci li a:hover {
     color: #fff;
 }
-.cpryt
-{
+
+.cpryt {
     margin-top: 20px;
     text-align: center;
     color: #777777;
 }
+
 .cpryt a,
-.cpryt:hover
-{
+.cpryt:hover {
     color: #fff;
 }
-@media (min-width: 992px)
-{
+
+@media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: .7rem;
         padding-left: .7rem;
     }
 }
-.navbar-light .navbar-toggler 
-{
+
+.navbar-light .navbar-toggler {
     background: #fff;
     border-radius: 0;
 }
-.banner
-{
+
+.banner {
     min-height: 100vh;
     padding: 100px 0;
 }
-.contentBox h1
-{
+
+.contentBox h1 {
     font-size: 2rem;
 }
-.contentBox p
-{
+
+.contentBox p {
     font-size: 1rem;
 }
-.navbar-nav .nav-link 
-{
+
+.navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 20px;
 }

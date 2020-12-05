@@ -1,58 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-.warna-bg
-{
-	background: linear-gradient(to right, rgba(91,134,229, .92), rgba(54,209,220, .92));
+.warna-bg {
+    background: linear-gradient(to right, rgba(91, 134, 229, .92), rgba(54, 209, 220, .92));
 }
 
-.jumbotron-bg
-{
-	background-size: cover;
-	background: url(img/bg.jpg);
-	background-size: 300px;
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(54, 209, 220, .92)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.jumbotron-bg h1
-{
+.navbar-toggler {
+    border: none;
+}
+
+.jumbotron-bg {
+    background-size: cover;
+    background: url(img/bg.webp);
+    background-size: 300px;
+}
+
+.jumbotron-bg h1 {
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* Equal-height card images, cf. https://stackoverflow.com/a/47698201/1375163*/
+
 .card-img-top {
     /*height: 11vw;*/
     object-fit: cover;
 }
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
     .card-img-top {
         height: 19vw;
     }
-  }
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
     .card-img-top {
         height: 16vw;
     }
-  }
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    .card-img-top {
-        height: 11vw;
-    }
-  }
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 992px) {
-    .card-img-top {
-        height: 11vw;
-    }
-  }
+}
 
-.list-group
-{
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .card-img-top {
+        height: 11vw;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 992px) {
+    .card-img-top {
+        height: 11vw;
+    }
+}
+
+.list-group {
     padding-bottom: 20px;
 }
 
 .text-primary {
-    color: #007bff!important;
+    color: #007bff !important;
 }
 
 .jumbotron h2 {
@@ -60,25 +78,89 @@
 }
 
 .comment-wrapper .panel-body {
-    max-height:650px;
-    overflow:auto;
+    max-height: 650px;
+    overflow: auto;
 }
 
 .comment-wrapper .media-list .media img {
-    width:64px;
-    height:64px;
-    border:2px solid #e5e7e8;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #e5e7e8;
 }
 
 .comment-wrapper .media-list .media {
-    border-bottom:1px dashed #efefef;
-    margin-bottom:25px;
+    border-bottom: 1px dashed #efefef;
+    margin-bottom: 25px;
+}
+
+.post-outer {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 374px;
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    vertical-align: top;
+    border: 0px solid rgba(0, 0, 0, .125);
+    border-radius: 8px;
 }
 
 .card {
-    border: 0px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
+    background: #fff;
+    padding: 0;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    margin: 0 auto 20px auto;
 }
+
+.card-body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    line-height: 1.6em;
+}
+
+.img-fluid {
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 1;
+    object-fit: cover;
+    min-width: 280px;
+    min-height: 186px;
+    max-width: 100%;
+}
+
+.card-body h2 {
+    position: relative;
+    font-size: 17px;
+    padding: 15px 15px 10px 15px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.blog-article {
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: #767676;
+    line-height: 1.5;
+}
+
+.admin {
+    border: 0;
+    color: #999;
+    padding: 10px 15px 10px 15px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
 
 /*---DARK MODE TOGGLE---*/
 
@@ -102,8 +184,12 @@
 
 [data-theme="dark"] .jumbotron-bg {
     background-size: cover;
-	background: url(img/bg.jpg);
-	background-size: 300px;
+    background: url(img/bg.jpg);
+    background-size: 300px;
+}
+
+[data-theme="dark"] .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225, 48, 108, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 [data-theme="dark"] .breadcrumb {
@@ -116,11 +202,12 @@
 
 [data-theme="dark"] .card {
     background-color: #303030 !important;
-    border: 1px solid rgba(0 ,0 ,0, 0.125);
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-[data-theme="dark"] .pagination .page-item a {
+[data-theme="dark"] .post-outer {
     background-color: #303030 !important;
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 [data-theme="dark"] .warna-bg {
@@ -140,7 +227,8 @@
 }
 
 [data-theme="dark"] .navbar-toggler {
-    background-color: #303030 !important;
+    background-color: none !important;
+    border: none;
 }
 
 [data-theme="dark"] .card-body {
@@ -148,17 +236,24 @@
 }
 
 [data-theme="dark"] .card {
-    border: 0px solid rgba(0,0,0,.125);
+    border: 0px solid rgba(206, 193, 193, 0.125);
 }
 
 [data-theme="dark"] .form-control {
     background-color: #222;
-    border: 1px solid #c061ff;
-
+    border: 1px solid #e1306c;
 }
 
 [data-theme="dark"] .btn-outline-primary {
     color: #fff;
-    border-color: #c061ff;
+    border-color: #e1306c;
+}
 
+[data-theme="dark"] .table .thead-light th {
+    color: #fff;
+    background-color: #212529;
+}
+
+[data-theme="dark"] .table {
+    color: #fff;
 }
