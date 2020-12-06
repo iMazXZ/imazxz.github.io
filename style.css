@@ -155,8 +155,8 @@ p {
 }
 
 .list-group-item {
-    border: none;
-    padding: 0;
+    border: 0px solid;
+    padding: 0rem 0rem;
 }
 
 a {
