@@ -26,11 +26,12 @@ body {
     background: linear-gradient(45deg, #2475fc 0, #2475fc 13%, #498cfb 35%, #498cfb 100%);
 }
 
-#head-line span {
+#head-line h1 {
     position: relative;
     font-size: 4rem;
     color: #fff;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .bg-bubbles {
@@ -407,7 +408,7 @@ a {
     background-color: #303030 !important;
 }
 
-[data-theme="dark"] .breadcrumb h6 {
+[data-theme="dark"] .breadcrumb li {
     color: #eee !important;
 }
 
