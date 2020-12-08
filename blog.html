@@ -26,6 +26,14 @@
         function closeLoginForm() {
             document.body.classList.remove("showLoginForm");
         }
+
+        function openLogoutForm() {
+            document.body.classList.add("showLogoutForm");
+        }
+
+        function closeLogoutForm() {
+            document.body.classList.remove("showLogoutForm");
+        }
     </script>
 
 
@@ -65,12 +73,12 @@
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="https://dummyimage.com/1920x1080/333/fff" width="40" height="40" class="rounded-circle" style="object-fit: cover;">
+                                <img src="img/profile.svg" width="40" height="40" class="rounded-circle" style="object-fit: cover;">
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="register.html">Sign Up</a>
                                 <a class="dropdown-item" href="#" onclick="openLoginForm()">Log In</a>
-                                <a class="dropdown-item" href="#">Log Out</a>
+                                <a class="dropdown-item" href="#" onclick="openLogoutForm()">Log Out</a>
                             </div>
                         </li>
                     </ul>
@@ -79,6 +87,8 @@
         </nav>
     </header>
 
+    <!-- LOGIN FORM AWAL -->
+
     <div class="container">
         <div class="popup-overlay"></div>
         <div class="popup">
@@ -86,14 +96,14 @@
             <form method="POST" class="form">
                 <input type="hidden" name="csrfmiddlewaretoken" value="j4dHckImc9TeacBny2OKrBeE9IxNEM3HTbrjEae2nUelk4XQYtep4rJIJNqjngYk">
                 <fieldset class="form-group">
-                    <legend class="border-bottom mb-2">Log In</legend>
+                    <legend class="mb-2">Login</legend>
 
                     <div id="div_id_username" class="form-group"> <label for="id_username" class=" requiredField">
-                Nama pengguna<span class="asteriskField">*</span> </label>
+                            Nama pengguna<span class="asteriskField">*</span> </label>
                         <div class=""> <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" class="textinput textInput form-control" required id="id_username"> </div>
                     </div>
                     <div id="div_id_password" class="form-group"> <label for="id_password" class=" requiredField">
-                Sandi<span class="asteriskField">*</span> </label>
+                            Sandi<span class="asteriskField">*</span> </label>
                         <div class=""> <input type="password" name="password" autocomplete="current-password" class="textinput textInput form-control" required id="id_password"> </div>
                     </div>
 
@@ -104,11 +114,30 @@
             </form>
             <div class="border-top pt-3">
                 <small class="text-muted">
-                Need an Account? <a href="register.html" class="ml-2">Sign Up</a>
-            </small>
+                    Need an Account? <a href="register.html" class="ml-2">Sign Up</a>
+                </small>
             </div>
         </div>
     </div>
+
+    <!-- LOGIN FORM AKHIR -->
+
+    <!-- LOG OUT -->
+
+    <div class="container">
+        <div class="popup-overlay2"></div>
+        <div class="popup-logout">
+            <div class="popup-close2" onclick="closeLogoutForm()">&times;</div>
+            <div class="pt-5 pl-2 pr-2">
+                <h2>Anda berhasil Log out</h2>
+                <small class="text-muted">
+                    <a href="/login/">Log In kembali</a>
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOG OUT END -->
 
     <!-- Awal Jumbotron -->
     <div id="hero-section">

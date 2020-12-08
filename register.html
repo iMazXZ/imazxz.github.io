@@ -14,84 +14,121 @@
 </head>
 
 <body>
-    <div class="container">
-        <form method="POST">
-            <input type="hidden" name="csrfmiddlewaretoken" value="PM4PWDPrLWq02PgDO3IyDO0QNhyG3e4Cz3dvEGknhAsPIj6YRciBKEZRIeM0IG3s">
-            <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Join Today</legend>
-                <div id="div_id_username" class="form-group">
-                    <label for="id_username" class=" requiredField">
-                        Nama pengguna<span class="asteriskField">*</span>
-                    </label>
-                    <div class="">
-                        <input type="text" name="username" maxlength="150" autofocus class="textinput textInput form-control" required id="id_username">
-                        <small id="hint_id_username" class="form-text text-muted">Wajib. 150 karakter atau sedikit. Hanya
-                            huruf, angka, dan @/./+/-/_.</small>
-                    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.webp" width="30" height="30" class="d-inline-block align-top" alt=""> StarLigHTs
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog Post</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Tentang Kami</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div id="div_id_first_name" class="form-group">
-                            <label for="id_first_name" class=" requiredField">
-                                First name<span class="asteriskField">*</span>
-                            </label>
-                            <div class="">
-                                <input type="text" name="first_name" class="textinput textInput form-control" required id="id_first_name">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div id="div_id_last_name" class="form-group">
-                            <label for="id_last_name" class=" requiredField">
-                                Last name<span class="asteriskField">*</span>
-                            </label>
-                            <div class="">
-                                <input type="text" name="last_name" class="textinput textInput form-control" required id="id_last_name">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="div_id_email" class="form-group">
-                    <label for="id_email" class=" requiredField">
-                        Email<span class="asteriskField">*</span>
-                    </label>
-                    <div class="">
-                        <input type="email" name="email" class="emailinput form-control" required id="id_email">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div id="div_id_password1" class="form-group">
-                            <label for="id_password1" class=" requiredField">
-                                Sandi<span class="asteriskField">*</span>
-                            </label>
-                            <div class="">
-                                <input type="password" name="password1" autocomplete="new-password" class="textinput textInput form-control" required id="id_password1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div id="div_id_password2" class="form-group">
-                            <label for="id_password2" class=" requiredField">
-                                Konfirmasi sandi<span class="asteriskField">*</span>
-                            </label>
-                            <div class="">
-                                <input type="password" name="password2" autocomplete="new-password" class="textinput textInput form-control" required id="id_password2">
-                                <small id="hint_id_password2" class="form-text text-muted">Masukkan sandi yang sama seperti
-                                    sebelumnya, untuk verifikasi.</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-            <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Sign Up</button>
             </div>
-        </form>
-        <div class="border-top pt-3">
-            <small class="text-muted">
-                Aleady have account? <a href="/login/" class="ml-2">Sign In</a>
-            </small>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row content">
+            <div class="col-md-6 m-auto">
+                <img src="img/signup.svg" class="img-fluid" alt="Sign Up Now!">
+            </div>
+            <div class="col-md-6">
+                <form method="POST">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="PM4PWDPrLWq02PgDO3IyDO0QNhyG3e4Cz3dvEGknhAsPIj6YRciBKEZRIeM0IG3s">
+                    <fieldset class="form-group">
+                        <legend class="mb-4">Join Today</legend>
+                        <div id="div_id_username" class="form-group">
+                            <label for="id_username" class=" requiredField">
+                                Nama pengguna<span class="asteriskField">*</span>
+                            </label>
+                            <div class="">
+                                <input type="text" name="username" maxlength="150" autofocus class="textinput textInput form-control" required id="id_username">
+                                <small id="hint_id_username" class="form-text text-muted">Wajib. 150 karakter atau
+                                    sedikit.
+                                    Hanya
+                                    huruf, angka, dan @/./+/-/_.</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div id="div_id_first_name" class="form-group">
+                                    <label for="id_first_name" class=" requiredField">
+                                        First name<span class="asteriskField">*</span>
+                                    </label>
+                                    <div class="">
+                                        <input type="text" name="first_name" class="textinput textInput form-control" required id="id_first_name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div id="div_id_last_name" class="form-group">
+                                    <label for="id_last_name" class=" requiredField">
+                                        Last name<span class="asteriskField">*</span>
+                                    </label>
+                                    <div class="">
+                                        <input type="text" name="last_name" class="textinput textInput form-control" required id="id_last_name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div_id_email" class="form-group">
+                            <label for="id_email" class=" requiredField">
+                                Email<span class="asteriskField">*</span>
+                            </label>
+                            <div class="">
+                                <input type="email" name="email" class="emailinput form-control" required id="id_email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div id="div_id_password1" class="form-group">
+                                    <label for="id_password1" class=" requiredField">
+                                        Sandi<span class="asteriskField">*</span>
+                                    </label>
+                                    <div class="">
+                                        <input type="password" name="password1" autocomplete="new-password" class="textinput textInput form-control" required id="id_password1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div id="div_id_password2" class="form-group">
+                                    <label for="id_password2" class=" requiredField">
+                                        Konfirmasi sandi<span class="asteriskField">*</span>
+                                    </label>
+                                    <div class="">
+                                        <input type="password" name="password2" autocomplete="new-password" class="textinput textInput form-control" required id="id_password2">
+                                        <small id="hint_id_password2" class="form-text text-muted">Masukkan sandi yang
+                                            sama
+                                            seperti
+                                            sebelumnya, untuk verifikasi.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="button">
+                        <button class="btn btn-outline-info" type="submit">Sign Up</button>
+                    </div>
+                </form>
+                <div class="pt-3">
+                    <small class="text-muted">
+                        Aleady have account? <a href="blog.html" class="ml-2">Sign In</a>
+                    </small>
+                </div>
+            </div>
         </div>
     </div>
 
