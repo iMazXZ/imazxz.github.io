@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+body {
+    background-color: #f7f9f8;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: 6649b8;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(54, 209, 220, .92)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.searchbar .btn {
+    border: none;
+}
+
+.searchbar input[type="search"] {
+    border: 0;
+    padding: 0 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 3px;
+}
+
+.searchbar {
+    position: relative;
+}
+
+.searchbar .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    width: 35px;
+    height: 100%;
+    border-radius: 3px;
+    color: #171a98;
+}
+
+.searchbar .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.searchbar .icon.active {
+    background: #1696ff;
+    transition: all 0.3s ease;
+}
+
+.searchbar input[type="search"].active {
+    width: 250px;
+    height: 35px;
+    padding: 0 10px;
+    transition: all 0.5s 0.1s ease;
+}
+
+.img-fluid {
+    width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+}
