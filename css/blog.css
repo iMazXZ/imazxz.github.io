@@ -645,3 +645,9 @@ a {
 [data-theme="dark"] .popup legend {
     color: #fff;
 }
+
+[data-theme="dark"] .pagination a {
+    background-color: #303030;
+    border-color: #111111;
+    color: #fff;
+}
